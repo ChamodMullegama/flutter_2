@@ -18,7 +18,7 @@ class myapp extends StatelessWidget {
             height: 300,
             padding: const EdgeInsets.all(10),
             margin: const EdgeInsets.all(10),
-            color: Colors.amberAccent,
+            color: Colors.black26,
             child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
