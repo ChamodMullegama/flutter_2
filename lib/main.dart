@@ -111,9 +111,70 @@
 
 // 2 layout
 
+// import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
+
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(myapp());
+// }
+
+// class myapp extends StatelessWidget {
+//   const myapp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "flutter app",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: Color(0xff9E00FF),
+//         ),
+//         body: Padding(
+//           padding: const EdgeInsets.symmetric(horizontal: 20),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             children: [
+//               Container(
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: Color(0xff9E00FFA5),
+//               ),
+//               Container(
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: Color.fromARGB(158, 251, 255, 0),
+//               ),
+//               Row(
+//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                 children: [
+//                   Container(
+//                     width: 150,
+//                     height: 150,
+//                     color: Colors.red,
+//                   ),
+//                          Container(
+//                     width: 150,
+//                     height: 150,
+//                     color: Colors.red,
+//                   ),
+//                 ],
+//               )
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// 3 app layout
+
 import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(myapp());
@@ -132,34 +193,99 @@ class myapp extends StatelessWidget {
           backgroundColor: Color(0xff9E00FF),
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                width: double.infinity,
-                height: 200,
-                color: Color(0xff9E00FFA5),
-              ),
-              Container(
-                width: double.infinity,
-                height: 200,
-                color: Color.fromARGB(158, 251, 255, 0),
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     width: 150,
                     height: 150,
-                    color: Colors.red,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.red,
+                    ),
                   ),
-                         Container(
+                  Container(
                     width: 150,
                     height: 150,
-                    color: Colors.red,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.red,
+                    ),
+                  )
+                ],
+              ),
+              Column(
+                children: [
+                  Container(
+                    width: double.infinity,
+                    height: 150,
+                    color: Colors.blue,
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 300,
+                child: Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 75,
+                              height: 75,
+                              decoration: const BoxDecoration(
+                                color: Color.fromARGB(255, 222, 33, 243),
+                              ),
+                            ),
+                            Container(
+                              width: 75,
+                              height: 75,
+                              decoration: const BoxDecoration(
+                                color: Color.fromARGB(255, 222, 33, 243),
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 75,
+                              height: 75,
+                              decoration: const BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                            ),
+                            Container(
+                              width: 75,
+                              height: 75,
+                              decoration: const BoxDecoration(
+                                color: Colors.yellow,
+                              ),
+                            ),
+                            Container(
+                              width: 75,
+                              height: 75,
+                              decoration: const BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    )
+                  ],
+                ),
               )
             ],
           ),
