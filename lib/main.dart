@@ -64,6 +64,53 @@
 
 // new app
 
+// import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
+
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(myapp());
+// }
+
+// class myapp extends StatelessWidget {
+//   const myapp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return  MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "flutter app",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor:Color(0xff9E00FF),
+//         ),
+//          body: Padding(
+//            padding: const EdgeInsets.all(8.0),
+//            child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceAround,
+//              children: [
+//               Container(
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: Color(0xff9E00FFA5),
+//               ),
+//                Container(
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: Color.fromARGB(158, 251, 255, 0),
+//               )
+
+//                    ],
+//                  ),
+//          ),
+//       ),
+
+//     );
+//   }
+// }
+
+// 2 layout
+
 import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
 
 import 'package:flutter/material.dart';
@@ -77,34 +124,47 @@ class myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "flutter app",
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor:Color(0xff9E00FF),
+          backgroundColor: Color(0xff9E00FF),
         ),
-         body: Padding(
-           padding: const EdgeInsets.all(8.0),
-           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-             children: [
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
               Container(
                 width: double.infinity,
                 height: 200,
                 color: Color(0xff9E00FFA5),
               ),
-               Container(
+              Container(
                 width: double.infinity,
                 height: 200,
                 color: Color.fromARGB(158, 251, 255, 0),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 150,
+                    height: 150,
+                    color: Colors.red,
+                  ),
+                         Container(
+                    width: 150,
+                    height: 150,
+                    color: Colors.red,
+                  ),
+                ],
               )
-           
-                   ],
-                 ),
-         ),
+            ],
+          ),
+        ),
       ),
-      
     );
   }
 }
