@@ -297,16 +297,176 @@
 
 // layout 4
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const myapp());
+// }
+
+// class myapp extends StatelessWidget {
+//   const myapp({super.key});
+
+//   final double BorderRadiussc = 100;
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "flutter app",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: const Color(0xff9E00FF),
+//         ),
+//         body: Padding(
+//           padding: EdgeInsets.symmetric(horizontal: 20),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             children: [
+//               SizedBox(
+//                 width: double.infinity,
+//                 height: 200,
+//                 child: Row(
+//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                   children: [
+//                     Container(
+//                       width: 150,
+//                       height: 150,
+//                       decoration: BoxDecoration(
+//                         borderRadius: BorderRadius.circular(10),
+//                         color: Colors.red,
+//                       ),
+//                     ),
+//                     Column(
+//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                       children: [
+//                         Container(
+//                           width: 150,
+//                           height: 150,
+//                           color: Colors.red,
+//                         ),
+//                         Container(
+//                           width: 150,
+//                           height: 150,
+//                           color: const Color.fromARGB(255, 244, 241, 54),
+//                         ),
+//                       ],
+//                     )
+//                   ],
+//                 ),
+//               ),
+//               Container(
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: const Color.fromARGB(158, 255, 247, 0),
+//               ),
+//               Container(
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: const Color.fromARGB(158, 255, 132, 0),
+//               ),
+//               SizedBox(
+//                 width: double.infinity,
+//                 height: 200,
+//                 child: Row(
+//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                   children: [
+//                     Container(
+//                       width: 150,
+//                       height: 150,
+//                       decoration: BoxDecoration(
+//                         borderRadius: BorderRadius.circular(10),
+//                         color: Colors.blue,
+//                       ),
+//                     ),
+//                     Column(
+//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                       children: [
+//                         Container(
+//                           width: 150,
+//                           height: 150,
+//                           color: const Color.fromARGB(255, 33, 243, 226),
+//                         ),
+//                         Container(
+//                           width: 150,
+//                           height: 150,
+//                           color: const Color.fromARGB(255, 255, 0, 0),
+//                         ),
+//                         Container(
+//                           width: 150,
+//                           height: 150,
+//                           color: Color.fromARGB(255, 0, 255, 221),
+//                         ),
+//                       ],
+//                     )
+//                   ],
+//                 ),
+//               ),
+//               SizedBox(
+//                 width: double.infinity,
+//                 height: 200,
+//                 child: Row(
+//                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//                   children: [
+//                     Container(
+//                       width: 150,
+//                       height: 150,
+//                       decoration: BoxDecoration(
+//                         borderRadius: BorderRadius.circular(BorderRadiussc),
+//                         color: Colors.green,
+//                       ),
+//                     ),
+//                     Container(
+//                       width: 150,
+//                       height: 150,
+//                       color: Colors.green,
+//                     ),
+//                     Container(
+//                       width: 150,
+//                       height: 150,
+//                       decoration: BoxDecoration(
+//                         borderRadius: BorderRadius.circular(BorderRadiussc),
+//                         color: Colors.green,
+//                       ),
+//                     ),
+//                     Container(
+//                       width: 150,
+//                       height: 150,
+//                       decoration: BoxDecoration(
+//                         borderRadius: BorderRadius.circular(BorderRadiussc),
+//                         color: Colors.green,
+//                       ),
+//                     ),
+//                     Container(
+//                       width: 150,
+//                       height: 150,
+//                       decoration: BoxDecoration(
+//                         borderRadius: BorderRadius.circular(BorderRadiussc),
+//                         color: Colors.green,
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// layout 5
+
+import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const myapp());
+  runApp(myapp());
 }
 
 class myapp extends StatelessWidget {
   const myapp({super.key});
 
-  final double BorderRadiussc = 100;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -317,135 +477,31 @@ class myapp extends StatelessWidget {
           backgroundColor: const Color(0xff9E00FF),
         ),
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              SizedBox(
+              Container(
+                padding: const EdgeInsets.all(20),
                 width: double.infinity,
                 height: 200,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      width: 150,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.red,
-                      ),
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: 150,
-                          height: 150,
-                          color: Colors.red,
-                        ),
-                        Container(
-                          width: 150,
-                          height: 150,
-                          color: const Color.fromARGB(255, 244, 241, 54),
-                        ),
-                      ],
-                    )
-                  ],
+                color: const Color(0xff9e00ffa5),
+                child: const Text(
+                  "hi am chamod how are you what are you do ing this",
+                  style: TextStyle(fontSize: 18),
                 ),
               ),
               Container(
+                padding: const EdgeInsets.all(20),
                 width: double.infinity,
                 height: 200,
-                color: const Color.fromARGB(158, 255, 247, 0),
-              ),
-              Container(
-                width: double.infinity,
-                height: 200,
-                color: const Color.fromARGB(158, 255, 132, 0),
-              ),
-              SizedBox(
-                width: double.infinity,
-                height: 200,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      width: 150,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue,
-                      ),
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          width: 150,
-                          height: 150,
-                          color: const Color.fromARGB(255, 33, 243, 226),
-                        ),
-                        Container(
-                          width: 150,
-                          height: 150,
-                          color: const Color.fromARGB(255, 255, 0, 0),
-                        ),
-                        Container(
-                          width: 150,
-                          height: 150,
-                          color: Color.fromARGB(255, 0, 255, 221),
-                        ),
-                      ],
-                    )
-                  ],
+                color: const Color.fromARGB(158, 242, 255, 0),
+                child: const Text(
+                  "hi am chamod how are you what are you do ing this",
+                  style: TextStyle(fontSize: 18),
+                  textAlign: TextAlign.center,
                 ),
-              ),
-              SizedBox(
-                width: double.infinity,
-                height: 200,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      width: 150,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(BorderRadiussc),
-                        color: Colors.green,
-                      ),
-                    ),
-                    Container(
-                      width: 150,
-                      height: 150,
-                      color: Colors.green,
-                    ),
-                    Container(
-                      width: 150,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(BorderRadiussc),
-                        color: Colors.green,
-                      ),
-                    ),
-                    Container(
-                      width: 150,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(BorderRadiussc),
-                        color: Colors.green,
-                      ),
-                    ),
-                    Container(
-                      width: 150,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(BorderRadiussc),
-                        color: Colors.green,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              )
             ],
           ),
         ),
