@@ -512,108 +512,318 @@
 
 // layout 6
 
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(myapp());
+// }
+
+// class myapp extends StatelessWidget {
+//   const myapp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "flutter app",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: const Color(0xff9E00FF),
+//         ),
+//         body: Padding(
+//           padding: const EdgeInsets.all(8.0),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceAround,
+//             children: [
+//               Container(
+//                 padding:
+//                     const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: const Color(0xff9e00ffa5),
+//                 child: const Column(
+//                   crossAxisAlignment: CrossAxisAlignment.start,
+//                   children: [
+//                     Text(
+//                       "thi sis the flutter",
+//                       style: TextStyle(
+//                         fontSize: 24,
+//                         fontWeight: FontWeight.bold,
+//                       ),
+//                     ),
+//                     SizedBox(
+//                       height: 20,
+//                     ),
+//                     Text(
+//                       "hi i am fluteer how are you i create the flutter",
+//                       style: TextStyle(
+//                         fontSize: 18,
+//                       ),
+//                     )
+//                   ],
+//                 ),
+//               ),
+//               Container(
+//                 padding: const EdgeInsets.all(20),
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: const Color.fromARGB(158, 242, 255, 0),
+//                 child: const Column(
+//                   children: [
+//                     Row(
+//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                       children: [
+//                         Text("flutter is open sours"),
+//                         Icon(
+//                           Icons.search,
+//                           size: 20,
+//                           color: Colors.blue,
+//                         )
+//                       ],
+//                     ),
+//                     SizedBox(
+//                       height: 20,
+//                     ),
+//                     Text(
+//                       "fluteer is the bset one",
+//                       style:
+//                           TextStyle(fontSize: 30, fontWeight: FontWeight.w100),
+//                     )
+//                   ],
+//                 ),
+//               ),
+//               Container(
+//                 padding: const EdgeInsets.all(20),
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: const Color.fromARGB(158, 242, 255, 0),
+//                 child: const Column(
+//                   children: [
+//                     Row(
+//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                       children: [
+//                         Text("flutter is open sours"),
+//                       ],
+//                     ),
+//                     SizedBox(
+//                       height: 20,
+//                     ),
+//                     Text(
+//                       "fluteer is the bset one",
+//                       style:
+//                           TextStyle(fontSize: 30, fontWeight: FontWeight.w100),
+//                     )
+//                   ],
+//                 ),
+//               )
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+// APP 7
+
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(myapp());
-}
+class Layout7 extends StatelessWidget {
+  const Layout7({super.key});
 
-class myapp extends StatelessWidget {
-  const myapp({super.key});
+  final yellowContainerHeight = 165;
+  final double purpleContainerHeightandWidth = 130;
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "flutter app",
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: const Color(0xff9E00FF),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
+    return Scaffold(
+      appBar: AppBar(
+        title: null,
+        backgroundColor: const Color(0xff9E00FF),
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                height: 350,
                 width: double.infinity,
-                height: 200,
-                color: const Color(0xff9e00ffa5),
-                child: const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "thi sis the flutter",
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+                margin: const EdgeInsets.symmetric(
+                  vertical: 20,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color(0xff06FFA5),
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        "Flutter is an open-source",
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700,
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "hi i am fluteer how are you i create the flutter",
-                      style: TextStyle(
-                        fontSize: 18,
+                      const SizedBox(
+                        height: 10,
                       ),
-                    )
-                  ],
+                      const Text(
+                        "Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015.",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: purpleContainerHeightandWidth,
+                            width: purpleContainerHeightandWidth,
+                            decoration: BoxDecoration(
+                              color: const Color(0xff8E8FFA),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: null,
+                          ),
+                          Container(
+                            height: purpleContainerHeightandWidth,
+                            width: purpleContainerHeightandWidth,
+                            decoration: BoxDecoration(
+                              color: const Color(0xff8E8FFA),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: null,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(20),
                 width: double.infinity,
-                height: 200,
-                color: const Color.fromARGB(158, 242, 255, 0),
-                child: const Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("flutter is open sours"),
-                        Icon(
-                          Icons.search,
-                          size: 20,
-                          color: Colors.blue,
-                        )
-                      ],
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "fluteer is the bset one",
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.w100),
-                    )
-                  ],
+                height: yellowContainerHeight.toDouble() * 3,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color(0xffFFE500),
                 ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(20),
-                width: double.infinity,
-                height: 200,
-                color: const Color.fromARGB(158, 242, 255, 0),
-                child: const Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("flutter is open sours"),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "fluteer is the bset one",
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.w100),
-                    )
-                  ],
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Flutter is an open-source",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          Icon(Icons.bookmark)
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      const Text(
+                        "Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015.",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        height: 300,
+                        decoration: BoxDecoration(
+                          color: const Color(0xff8E8FFA),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 20, horizontal: 10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "Flutter is an open-source",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 5,
+                              ),
+                              const Text(
+                                "Flutter is an open-source UI (User Interface) software development kit created by Google. ",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 90,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(100),
+                                      color: const Color(0xff06FFA5),
+                                    ),
+                                    height: 80,
+                                    width: 80,
+                                    child: null,
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(100),
+                                      color: const Color(0xff06FFA5),
+                                    ),
+                                    height: 80,
+                                    width: 80,
+                                    child: null,
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(100),
+                                      color: const Color(0xff06FFA5),
+                                    ),
+                                    height: 80,
+                                    width: 80,
+                                    child: null,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],
