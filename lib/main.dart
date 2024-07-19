@@ -456,7 +456,61 @@
 
 // layout 5
 
-import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
+// import 'dart:nativewrappers/_internal/vm/lib/ffi_native_type_patch.dart';
+
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(myapp());
+// }
+
+// class myapp extends StatelessWidget {
+//   const myapp({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: "flutter app",
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: const Color(0xff9E00FF),
+//         ),
+//         body: Padding(
+//           padding: const EdgeInsets.all(8.0),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceAround,
+//             children: [
+//               Container(
+//                 padding: const EdgeInsets.all(20),
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: const Color(0xff9e00ffa5),
+//                 child: const Text(
+//                   "hi am chamod how are you what are you do ing this",
+//                   style: TextStyle(fontSize: 18),
+//                 ),
+//               ),
+//               Container(
+//                 padding: const EdgeInsets.all(20),
+//                 width: double.infinity,
+//                 height: 200,
+//                 color: const Color.fromARGB(158, 242, 255, 0),
+//                 child: const Text(
+//                   "hi am chamod how are you what are you do ing this",
+//                   style: TextStyle(fontSize: 18),
+//                   textAlign: TextAlign.center,
+//                 ),
+//               )
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// layout 6
 
 import 'package:flutter/material.dart';
 
@@ -482,13 +536,31 @@ class myapp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
-                padding: const EdgeInsets.all(20),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                 width: double.infinity,
                 height: 200,
                 color: const Color(0xff9e00ffa5),
-                child: const Text(
-                  "hi am chamod how are you what are you do ing this",
-                  style: TextStyle(fontSize: 18),
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "thi sis the flutter",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "hi i am fluteer how are you i create the flutter",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    )
+                  ],
                 ),
               ),
               Container(
@@ -496,10 +568,52 @@ class myapp extends StatelessWidget {
                 width: double.infinity,
                 height: 200,
                 color: const Color.fromARGB(158, 242, 255, 0),
-                child: const Text(
-                  "hi am chamod how are you what are you do ing this",
-                  style: TextStyle(fontSize: 18),
-                  textAlign: TextAlign.center,
+                child: const Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("flutter is open sours"),
+                        Icon(
+                          Icons.search,
+                          size: 20,
+                          color: Colors.blue,
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "fluteer is the bset one",
+                      style:
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.w100),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(20),
+                width: double.infinity,
+                height: 200,
+                color: const Color.fromARGB(158, 242, 255, 0),
+                child: const Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("flutter is open sours"),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      "fluteer is the bset one",
+                      style:
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.w100),
+                    )
+                  ],
                 ),
               )
             ],
