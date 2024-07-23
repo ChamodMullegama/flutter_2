@@ -729,7 +729,7 @@ class Layout7 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Flutter is an open-source",
+                            "Flutter is an open-source AND ANY ONE CAN LEARN THIS ",
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w700,
