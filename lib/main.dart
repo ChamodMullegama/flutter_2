@@ -742,7 +742,7 @@ class Layout7 extends StatelessWidget {
                         height: 10,
                       ),
                       const Text(
-                        "Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015.",
+                        "Flutter is an open-source UI (User Interface) helot development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015.",
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w400,
