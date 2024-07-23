@@ -816,6 +816,15 @@ class Layout7 extends StatelessWidget {
                                     width: 80,
                                     child: null,
                                   ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(100),
+                                      color: const Color(0xff06FFA5),
+                                    ),
+                                    height: 80,
+                                    width: 80,
+                                    child: null,
+                                  ),
                                 ],
                               ),
                             ],
