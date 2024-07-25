@@ -779,7 +779,7 @@ class Layout7 extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w400,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                               const SizedBox(
