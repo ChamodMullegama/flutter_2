@@ -838,6 +838,7 @@
 // app 08
 
 import 'package:flutter/material.dart';
+import 'package:testfirst/Pages/home_page.dart';
 
 void main() {
   runApp(myapp());
@@ -851,25 +852,7 @@ class myapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "flutter app",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("My app",
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w300
-          ),
-          ),
-          backgroundColor: Colors.pinkAccent,
-          leading: Icon(
-            Icons.menu,
-            color: Colors.white,
-            size: 30,
-          ),
-        ),
-        body: Column(
-          
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
