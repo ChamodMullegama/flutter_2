@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(5),
                 child: Text(
-                  "hi a am chamod mullegama i am a gfluter developer i can  make fluter apop nice ",
+                  "hi a am chamod mullegama i am a gfluter developer i can  make fluter apop nice I AM LEAEING FLUTTER NOW  ",
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.black,
