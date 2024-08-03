@@ -851,7 +851,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "flutter app",
+      title: "flutter app cchamod mullegama",
       home: HomePage(),
     );
   }
