@@ -79,7 +79,7 @@
 //   Widget build(BuildContext context) {
 //     return  MaterialApp(
 //       debugShowCheckedModeBanner: false,
-//       title: "flutter app",
+//       title: "flutter app chamod mullegama",
 //       home: Scaffold(
 //         appBar: AppBar(
 //           backgroundColor:Color(0xff9E00FF),
