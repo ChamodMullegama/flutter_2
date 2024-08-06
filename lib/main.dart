@@ -851,7 +851,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "flutter app cchamod mullegama ",
+      title: "flutter app cchamod mullegama  GNFDHDFGHH GTH DGTH DTYT",
       text("hi i am chamod mullegam")
       home: HomePage(),
     );
