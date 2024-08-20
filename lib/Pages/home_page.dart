@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              "user interface with flutter flutter flutter    ",
+              "user interface with flutter flutter     ",
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
