@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text(
-          "My app",
+          "My app dffffffffffffffff df sdf fd fd ",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w300),
         ),
         backgroundColor: Colors.pinkAccent,
