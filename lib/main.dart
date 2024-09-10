@@ -24,7 +24,7 @@
 //               crossAxisAlignment: CrossAxisAlignment.start,
 //               children: [
 //                 Text(
-                  "flutter is easy to create cccccccccccccccccccccccc",
+                  "flutter is easy to create ccccccc",
 //                   style: TextStyle(
 //                     fontSize: 40,
 //                   ),
